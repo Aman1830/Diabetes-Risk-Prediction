@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+# Opening the Saved Predictive Model
 @st.cache_resource
 def load_model():
     with open("Final_RandomForest_Model.pkl", "rb") as file:
